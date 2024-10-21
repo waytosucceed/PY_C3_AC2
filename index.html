@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+       section{
+        p{
+            font-size: 1.4rem;
+        }
+    }
+</style>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+      </header>
+      <p style="text-align: center; font-size: 1.7rem; font-weight: bold; margin-bottom: 0;">Activity
+        👉🏽<a href="https://colab.research.google.com/" target="_blank" class="button">Open Google Collab</a>
+    
+        </p>
+      <main style="display: flex; justify-content: center;">
+        <section id="activity1">
+            <h2>Activity 1: Even/Odd</h2>
+            <p>Write a program to take input from the user and check if it is even or odd.</p>
+            <img src="./images/sc1.png" class="answer-img" id="answer-img1" alt="Even/Odd example">
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+
+        </section>
+
+        <section id="activity2">
+            <h2>Activity 2: Eligible to Vote</h2>
+            <p>Write a program to take the birth year of the user as input and check if they are eligible to vote.</p>
+            <img src="./images/sc2.png" style="max-width: 600px;" class="answer-img" id="answer-img2" alt="Eligible to Vote example">
+            <button class="show-answer-btn" id="show-answer-btn2">Show Code</button>
+        </section>
+    </main>
+
+    <button class="challenge-btn" onclick="window.location.href='challenges.html'">Challenges</button>
+ 
+    <script>
+        document.getElementById('show-answer-btn1').addEventListener('click', function() {
+            var img = document.getElementById('answer-img1');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Answer';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Answer';
+            }
+        });
+
+        document.getElementById('show-answer-btn2').addEventListener('click', function() {
+            var img = document.getElementById('answer-img2');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Answer';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Answer';
+            }
+        });
+    </script>
+
+</body>
+</html>
